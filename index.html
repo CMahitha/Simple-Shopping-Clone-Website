@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Clothing, Electronics, Furniture, Footwear & More. Best Offers!
+    </title>
+<link rel="icon" type="image/x-icon" href="/Img/favicon.ico">
+
+
+    <!-- Bootstrap core CSS -->
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        position: sticky;
+        top: 0px;
+        background-color: #2874f0;
+    }
+    
+    nav{
+
+display: flex;
+width: 97%;
+background: #0a5071;
+position: relative;
+justify-content: space-between;
+text-align: center;
+align-items: center;
+padding: 15px 30px;
+ }
+nav .icon{
+font-size: 35px;
+font-weight: 800;
+color:
+#fff;
+cursor: pointer;
+}
+
+nav ol{
+display: flex;
+list-style: none;
+margin: auto 0;
+ }
+
+ nav ol li{
+margin: 0 2px;
+}
+nav ol li a{
+    margin: 0 2px;
+
+ }
+
+nav ol li a{
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+Letter-spacing: 1px;
+padding: 5px 10px;
+}
+
+ nav ol li :hover a
+ {
+
+background: #fff;
+color: #0a5071;
+}
+
+
+
+
+nav #search {
+  margin-top: 4px;
+}
+
+nav #search {
+  position: relative;
+}
+
+nav #search input {
+  background-color: rgba(255, 255, 255, 0.10);
+  height: 44px;
+  width: 250px;
+  border-radius: 23px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0px 20px 0px;
+}
+
+nav #search input::placeholder {
+  color: rgba(250, 250, 250, 0.75);
+}
+
+nav #search i {
+  position: absolute;
+  color: #fff;
+  right: 20px;
+  top: 15px;
+  font-size: 16px;
+}
+
+nav .search_box{
+display: flex;
+margin: auto 0;
+height: 50px;
+Line-height: 50px;
+align-items: center;
+text-align: center;
+}
+
+nav .search_box input{
+border: none;
+outline: none;
+background: #fff;
+height: 100%;
+padding: 0 10px;
+font-size: 20px;
+width: 500px;
+align-items: center;
+text-align: center;
+
+}
+
+.search btn {
+    font-family: Roboto, Arial, sans-serif;
+    align-items: center;
+}
+    
+    nav ol{
+display: flex;
+list-style: none;
+margin: auto 0;
+ }
+
+ nav ol li{
+margin: 0 2px;
+}
+nav ol li a{
+    margin: 0 2px;
+
+ }
+
+nav ol li a{
+
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+Letter-spacing: 1px;
+padding: 5px 10px;
+}
+
+ nav ol li :hover a
+ {
+
+background: #fff;
+
+color: #0a5071;
+
+}
+    
+    .text {
+        height: 1vh;
+        width: 25vw;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+        
+    .container {
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+        text-align: center;
+        /* height: calc(100vh - 50px - 7vh); */
+    }
+    
+    .slider {
+        justify-content: center;
+        width: 80vw;
+        height: 40vw;
+        margin: 12px auto;
+        overflow: hidden;
+        text-align: center;
+        /* height: 320px; */
+        /* padding: 10px auto 10px auto; */
+        /* border: gray 2px solid; */
+    }
+    .card {
+        width: 92vw;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: 25px auto;
+        border: ridge;
+        overflow: hidden;
+    }    
+    
+    .card1 {
+        width: 91vw;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: -37px auto auto auto;
+        border: ridge;
+        overflow: hidden
+    }
+
+    .h2 {
+		margin-top: 0;
+        background-color: #172337;
+        color: white;
+        height: 9vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto, Arial, sans-serif;
+    
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .card-item {
+        width: 160px;
+        display: flex;
+        margin: 12px 0 30px 0;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 16px;
+        cursor: pointer;
+    }
+    
+    .lines {
+        margin: 9px;
+        cursor: pointer;
+    }
+    
+    footer {
+        background-color: #172337;
+        color: white;
+        height: 9vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto, Arial, sans-serif;
+    } 
+    
+    </style>
+
+<body>
+    <header>
+        <nav>
+            
+            <ol>
+        
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Shoes</a></li>
+
+            </ol>
+
+            <div class="icon">Online <b style="color: red;">S</b>hop</div>
+             <!-- ***** Serach Start ***** -->
+             <div class="search-input">
+                <form id="search" action="#">
+                  <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+              <!-- ***** Serach Start ***** -->
+       <!--     <div class="search">
+                <input type="search_box" placeholder="Search for products, brands and more" type="text">
+                <button class="search btn" type="button">Search</button>
+        
+        
+            </div>  -->
+            
+                <ol>
+                    <li class="active"><a href="#">Profile</a></li>
+				<li><a href="#">wishlist</a></li>
+				<li><a href="#">Cart</a></li>
+			</ol>    
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="slider">
+                <marquee scroll amount="6" direction="left">
+
+                    <h1>Hurry up, Buy now !!</h1>
+                    
+                    <image src="adv1.jfif" height="600px" width="1300px">
+                        <image src="adv2.jfif" height="600px" width="1300px">
+                            <image src="adv3.jfif" height="600px" width="1300px">
+                
+                    </marquee>
+                
+            </div> <br>
+        </div>
+
+        <div class="card">
+            <!-- <hr> -->
+            <h2 class="my-2">Deals of the Day</h2>
+
+            <div class="cards">
+
+                <div class="card-item">
+                    <img src="bd-men.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">shirts & more</p>
+                        <p class="text-center">Up to 75% off</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <img src="bd-women.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">sarees & more</p>
+                        <p class="text-center">up to 75% off</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <img src="bd-watches.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">watches & more</p>
+                        <p class="text-center">Up to 70% off</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <img src="bd-furniture.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Bedroom set Furniture & more</p>
+                        <p class="text-center">up to 65% off</p>
+                    
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <img src="bd-shoes.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Nike & more</p>
+                        <p class="text-center">up to 65% off</p>
+                        <p class="text-center">Branded shoes</p>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <img src="bd-mobiles.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">iphone & more</p>
+                        <p class="text-center">up to 75% off</p>
+                        <p class="text-center">best offers on electronics</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr> -->
+        </div>
+
+        <div class="card">
+            <h2 class="my-2">Best Selling</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="bs-jacket.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Men solid Denim Jacket</p>
+                        <p class="text-center">Rs.300</p>
+                        <p class="text-center">75% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="bs-wtch.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Exclusive offer on smart watches</p>
+                        <p class="text-center">Rs.7000</p>
+                        <p class="text-center">Buy2, get1 75% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="bs-saree.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Beautiful saree</p>
+                        <p class="text-center">Rs.500</p>
+                        <p class="text-center">60% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="bs-dress.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Organza anarkali dress</p>
+                        <p class="text-center">Rs.600</p>
+                        <p class="text-center">65% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="bs-shoes.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Fahionable casual shoes</p>
+
+                        <p class="text-center">Rs.399</p>
+                        <p class="text-center">60% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="bs-frn.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Classic Wooden Swing chair</p>
+                        <p class="text-center">Rs.2999</p>
+                        <p class="text-center">62% off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <marquee scroll amount="6" direction="left">
+
+            <h1>Min 50% off, crazy deals.. Hurry up !!  Min 50% off, crazy deals.. Hurry up !!  Min 50% off, crazy deals.. Hurry up !!</h1>
+            </marquee>
+            
+
+        <div class="card">
+            <h2 class="my-2">Best electronics for you !</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="el-lptp.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Monitors & keyboards</p>
+                        <p class="text-center">From Rs.9000</p>
+    
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="el-phn.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Mobile</p>
+                        <p class="text-center">From Rs.7,999</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="el-camera.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Camera</p>
+                        <p class="text-center">From Rs.1000</p>
+                    
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="el-airpods.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">airpods & earphones</p>
+                        <p class="text-center">From Rs.300</p>
+                    
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="el-wtch.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">watches</p>
+                        <p class="text-center">From Rs.800</p>
+                        
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="el-rc.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Rice cooker & kitchen electronics</p>
+                        <p class="text-center">From Rs.1,500</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="my-2">Clothing</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="cl-men.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Men shirts</p>
+                        <p class="text-center">From Rs.299</p>
+            
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="cl-sarees.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">sarees and kurtas</p>
+                        <p class="text-center">From Rs.299</p>
+        
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="cl-shweats.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">shweaters</p>
+                        <p class="text-center">Rs.400</p>
+        
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="cl-western.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">women western wear</p>
+                        <p class="text-center">Rs.200</p>
+    
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="cl-pants.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Men bottom wear</p>
+                        <p class="text-center">From Rs.30o</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="cl-tshirts.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">T-Shirts</p>
+                        <p class="text-center">From Rs.200</p>
+            
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="my-2">Furniture</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="f-sofa.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">sofa sets</p>
+                        <p class="text-center">From Rs.6000</p>
+
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="f-dining.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">dining sets</p>
+                        <p class="text-center">Rs.5000</p>
+        
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="f-bdrm.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Bedroom set Furniture</p>
+                        <p class="text-center">From Rs.28,000</p>
+
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="f-table.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Table Furniture</p>
+                        <p class="text-center">From Rs.3000</p>
+    
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="f-chair.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Chairs</p>
+                        <p class="text-center">From Rs.1000</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="f-wall atc.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">wooden intersecting wall shelfs</p>
+                        <p class="text-center">From Rs.1000</p>
+                        
+                    </div>
+                </div>
+
+        
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="my-2">Shoes</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="s1.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Casual Shoes</p>
+                        <p class="text-center">From Rs.399</p>
+                
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="s2.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">boots</p>
+                        <p class="text-center">Rs.600</p>
+        
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="s3.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Sports Shoes</p>
+                        <p class="text-center">From Rs.599</p>
+                    
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="s4.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">Loafers</p>
+                        <p class="text-center">Rs.599</p>
+                        
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="s5.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">sneakers</p>
+                        <p class="text-center">Rs.300</p>
+            
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="s6.jfif" alt="">
+                    <div class="lines">
+                        <p class="text-center">women wearable shoes</p>
+                        <p class="text-center">From Rs.200</p>
+        
+                    </div>
+                </div>
+
+         
+    </main>
+
+    <footer class="flex-all-center">
+        <p>Copyright &copy; Online Shop</p>
+    </footer>
+</body>
+</html>
